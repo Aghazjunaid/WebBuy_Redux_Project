@@ -1,11 +1,13 @@
-import { createStore } from "redux";
+import { ActionTypes } from "../constants/action-types";
+const intialState = {
+  products: [],
+};
 
-import reducers from "./reducers/index";
-
-const store = createStore(
-  reducers,
-  {},
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
-export default store;
+export const productsReducer = (state = intialState, { type, payload }) => {
+  switch (type) {
+    case ActionTypes.SET_PRODUCTS:
+      return { ...state, products: payload };
+    default:
+      return state;
+  }
+};
