@@ -26,11 +26,21 @@ function Login() {
                   placeholder="Enter Password"
                 />
               </Form.Group>
+              <div className="text-center">
               <Button variant="primary" type="submit">
                 Login
               </Button>
+              </div>
             </Form>
           </Col>
+        </Row>
+        <Row style={{ marginTop: "20px", alignItems: "center" }}>
+            <Col md={{ span: 3, offset: 4 }} style={{fontWeight: "bold", fontSize: "20px" }}>
+            Don't have an account
+            </Col>
+            <Col md={{span: 3}} style={{marginLeft: "-50px" }}>
+            <Button variant="success" href="/register">Register Here</Button>{' '}
+            </Col>
         </Row>
       </Container>
     </div>
