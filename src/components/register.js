@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./header";
+import Header from "./Header";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 function Register() {
@@ -39,9 +39,11 @@ function Register() {
                   placeholder="Enter Password"
                 />
               </Form.Group>
+              <div className="text-center">
               <Button variant="primary" type="submit">
                 Register
               </Button>
+              </div>
             </Form>
           </Col>
         </Row>
