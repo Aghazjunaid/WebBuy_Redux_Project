@@ -29,9 +29,9 @@ const ProductPage = () => {
 
     return (
       <>
-        <Card style={{ width: "18rem", margin: "10px" }} key={id}>
-          <Card.Img variant="top" src={image} alt={title} style={{ width: "280px", height: "300px" }}/>
-          <Card.Body>
+        <Card style={{ width: "15rem", margin: "10px" }} key={id}>
+          <Card.Img variant="top" src={image} alt={title} style={{ width: "14rem", height: "14rem" }}/>
+          <Card.Body style={{bottom: 0}}>
             <Card.Title>{title}</Card.Title>
             <Card.Text>$ {price}</Card.Text>
             <Card.Subtitle className="text-muted">{category}</Card.Subtitle>
