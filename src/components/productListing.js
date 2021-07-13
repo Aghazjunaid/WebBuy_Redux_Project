@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../redux/actions/productActions";
-import { Card, Row, Col, Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import "../App.css";
 import Header from "./Header";
 
